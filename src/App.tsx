@@ -14,7 +14,6 @@ import {
     ScrollView,
     StatusBar,
     StyleSheet,
-    Text,
     useColorScheme,
     View
 } from 'react-native'
@@ -26,6 +25,8 @@ import {
     LearnMoreLinks,
     ReloadInstructions
 } from 'react-native/Libraries/NewAppScreen'
+
+import { Text } from './components/Text'
 
 const Section: React.FC<{
     title: string
