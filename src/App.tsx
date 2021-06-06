@@ -27,6 +27,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen'
 
 import { Text } from './components/Text'
+import SvgIcon from './assets/images/icn-snow.svg'
 
 const Section: React.FC<{
     title: string
@@ -75,6 +76,7 @@ const App = () => {
                 style={backgroundStyle}
             >
                 <Header />
+                <SvgIcon />
                 <View
                     style={{
                         backgroundColor: isDarkMode
