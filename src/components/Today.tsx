@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
     },
     description: {
         fontFamily: 'Lato-Black',
+        textAlign: 'center',
         color: '#fff',
         fontSize: 30,
         textTransform: 'uppercase'

@@ -2,7 +2,6 @@ import React from 'react'
 import { FlatList, StyleSheet, View } from 'react-native'
 import { WeatherContext } from '../context'
 import WeatherIcon from './WeatherIcon'
-
 import { Text } from './Text'
 
 const Footer = () => {
@@ -27,7 +26,7 @@ const Footer = () => {
         <View style={styles.footer}>
             <FlatList
                 scrollEnabled={true}
-                data={data.forecast.slice(1, 5)}
+                data={data?.forecast.slice(1, 5)}
                 numColumns={2}
                 contentContainerStyle={styles.flatList}
                 keyExtractor={item => item.date}

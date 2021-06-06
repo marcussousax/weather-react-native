@@ -2,26 +2,67 @@ import React from 'react'
 import Header from './Header'
 import Today from './Today'
 import Footer from './Footer'
-import { StyleSheet, View } from 'react-native'
+import { ActivityIndicator, StyleSheet, View } from 'react-native'
 import { WeatherContext } from '../context'
+import { Text } from './Text'
 
-function getBackgroundColor(condition_slug: string) {
-    const dayTime = ['clear_day', 'cloudly_day']
-    const nightTime = ['clear_night', 'cloudly_night']
-    if (nightTime.includes(condition_slug)) {
+function getBackgroundColor(currently: string) {
+    if (currently === 'noite') {
         return '#4F4F4F'
     }
-    if (dayTime.includes(condition_slug)) {
-        return '#60B4E2'
-    }
-    return '#ccc'
+    return '#60B4E2'
 }
 
 const MainContent = () => {
-    const { data } = React.useContext(WeatherContext)
+    const { data, loading, grantedAccess } = React.useContext(WeatherContext)
 
     const colorStyles = {
-        backgroundColor: getBackgroundColor(data.condition_slug)
+        backgroundColor: getBackgroundColor(data.currently)
+    }
+
+    if (!grantedAccess) {
+        return (
+            <View
+                style={{
+                    flex: 1,
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }}
+            >
+                <Text
+                    style={{
+                        fontSize: 16,
+                        textTransform: 'uppercase',
+                        marginBottom: 16
+                    }}
+                >
+                    Permissão negada
+                </Text>
+            </View>
+        )
+    }
+
+    if (loading) {
+        return (
+            <View
+                style={{
+                    flex: 1,
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }}
+            >
+                <Text
+                    style={{
+                        fontSize: 16,
+                        textTransform: 'uppercase',
+                        marginBottom: 16
+                    }}
+                >
+                    Buscando localização
+                </Text>
+                <ActivityIndicator size="large" color="#666" />
+            </View>
+        )
     }
 
     return (
