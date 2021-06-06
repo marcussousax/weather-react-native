@@ -23,11 +23,6 @@ const styles = StyleSheet.create({
     today: {
         alignItems: 'center'
     },
-    header: {
-        height: 100,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
     description: {
         fontFamily: 'Lato-Black',
         color: '#fff',
@@ -42,7 +37,7 @@ const styles = StyleSheet.create({
     temp: {
         fontFamily: 'Lato-Light',
         color: '#fff',
-        fontSize: 80
+        fontSize: 70
     }
 })
 

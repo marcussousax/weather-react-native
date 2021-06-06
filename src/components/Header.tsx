@@ -16,7 +16,7 @@ const Header: React.FC = () => {
 
 const styles = StyleSheet.create({
     header: {
-        height: 100,
+        height: 90,
         justifyContent: 'center',
         alignItems: 'center'
     },

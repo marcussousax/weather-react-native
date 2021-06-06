@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     footer: {
         justifyContent: 'flex-start',
         flexShrink: 0,
-        flexBasis: '40%',
+        flexBasis: '45%',
         borderTopLeftRadius: 50,
         borderBottomRightRadius: 50,
         backgroundColor: 'rgba(255, 255, 255, 0.3)'
