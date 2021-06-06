@@ -1,65 +1,105 @@
 export const RESPONSE = {
-    by: 'city_name',
-    execution_time: 0,
-    from_cache: true,
+    by: 'gps',
+    valid_key: true,
     results: {
+        temp: 25,
+        date: '2021-06-06',
+        time: '12:21',
+        condition_code: '28',
+        description: 'Day mostly cloudy',
+        currently: 'day',
         cid: '',
-        city: 'Campinas, SP',
-        city_name: 'Campinas',
-        condition_code: '27',
-        condition_slug: 'clear_day',
-        currently: 'dia',
-        date: '06/06/2021',
-        description: 'Tempo limpo',
+        city: 'Rio de Janeiro, RJ',
+        img_id: '28',
+        humidity: 65,
+        wind_speedy: '5 km/h',
+        sunrise: '6:28 am',
+        sunset: '5:15 pm',
+        condition_slug: 'cloud',
+        city_name: 'Rio de Janeiro',
         forecast: [
             {
-                condition: 'cloudly_day',
-                date: '06/06',
-                description: 'Parcialmente nublado',
-                max: 27,
-                min: 15,
-                weekday: 'Dom'
+                date: '06-06',
+                weekday: 'Sun',
+                max: 28,
+                min: 19,
+                description: 'Day partly cloudy',
+                condition: 'cloudly_day'
             },
             {
-                condition: 'cloud',
-                date: '07/06',
-                description: 'Tempo nublado',
-                max: 27,
-                min: 15,
-                weekday: 'Seg'
+                date: '06-07',
+                weekday: 'Mon',
+                max: 25,
+                min: 20,
+                description: 'Isolated thundershowers',
+                condition: 'storm'
             },
             {
-                condition: 'storm',
-                date: '08/06',
-                description: 'Tempestades isoladas',
-                max: 26,
-                min: 16,
-                weekday: 'Ter'
+                date: '06-08',
+                weekday: 'Tue',
+                max: 25,
+                min: 19,
+                description: 'Day partly cloudy',
+                condition: 'cloudly_day'
             },
             {
-                condition: 'storm',
-                date: '09/06',
-                description: 'Tempestades isoladas',
+                date: '06-09',
+                weekday: 'Wed',
                 max: 23,
-                min: 16,
-                weekday: 'Qua'
+                min: 20,
+                description: 'Thunderstorms',
+                condition: 'storm'
             },
             {
-                condition: 'cloud',
-                date: '10/06',
-                description: 'Tempo nublado',
+                date: '06-10',
+                weekday: 'Thu',
+                max: 25,
+                min: 19,
+                description: 'Thunderstorms',
+                condition: 'storm'
+            },
+            {
+                date: '06-11',
+                weekday: 'Fri',
+                max: 23,
+                min: 20,
+                description: 'Showers',
+                condition: 'rain'
+            },
+            {
+                date: '06-12',
+                weekday: 'Sat',
+                max: 20,
+                min: 18,
+                description: 'Scattered thunderstorms',
+                condition: 'storm'
+            },
+            {
+                date: '06-13',
+                weekday: 'Sun',
+                max: 21,
+                min: 17,
+                description: 'Day partly cloudy',
+                condition: 'cloudly_day'
+            },
+            {
+                date: '06-14',
+                weekday: 'Mon',
                 max: 22,
+                min: 17,
+                description: 'Sunny',
+                condition: 'clear_day'
+            },
+            {
+                date: '06-15',
+                weekday: 'Tue',
+                max: 25,
                 min: 16,
-                weekday: 'Qui'
+                description: 'Sunny',
+                condition: 'clear_day'
             }
-        ],
-        humidity: 69,
-        img_id: '27',
-        sunrise: '06:43 am',
-        sunset: '05:30 pm',
-        temp: 17,
-        time: '09:18',
-        wind_speedy: '1.64 km/h'
+        ]
     },
-    valid_key: true
+    execution_time: 0.29,
+    from_cache: false
 }

@@ -18,8 +18,8 @@ const Footer = () => {
                     width={60}
                     height={60}
                 />
-                <Text style={styles.min}>mín.{item.temp}&#176;</Text>
-                <Text style={styles.max}>máx.{item.temp}&#176;</Text>
+                <Text style={styles.temp}>mín.{item.min}&#176;</Text>
+                <Text style={styles.temp}>máx.{item.max}&#176;</Text>
             </View>
         )
     }
