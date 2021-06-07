@@ -1,4 +1,4 @@
-### A React Native App that display the Weather Forecast usgin Geo Location
+### A React Native App that display the Weather Forecast using Geo Location
 ----
 
 Weather API by https://hgbrasil.com/
