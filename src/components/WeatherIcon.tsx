@@ -4,7 +4,7 @@ import IcnClear from '../assets/images/icn-clear.svg'
 import IconFog from '../assets/images/icn-fog.svg'
 import IconMostlyCloudy from '../assets/images/icn-mostlycloudy.svg'
 import IconNtClear from '../assets/images/icn-nt_clear.svg'
-import IconNtCloudy from '../assets/images/icn-nt_cloudy.svg'
+import IconCloudy from '../assets/images/icn-cloudy.svg'
 import IconNtMostlyCloudy from '../assets/images/icn-nt_mostlycloudy.svg'
 import IconRain from '../assets/images/icn-rain.svg'
 import IconSnow from '../assets/images/icn-snow.svg'
@@ -35,11 +35,11 @@ const WeatherIcon = ({
         case 'clear_night':
             return <IconNtClear style={style} width={width} height={height} />
         case 'cloud':
+            return <IconCloudy style={style} width={width} height={height} />
+        case 'cloudly_day':
             return (
                 <IconMostlyCloudy style={style} width={width} height={height} />
             )
-        case 'cloudly_day':
-            return <IconNtCloudy style={style} width={width} height={height} />
         case 'cloudly_night':
             return (
                 <IconNtMostlyCloudy

@@ -7,6 +7,7 @@ export interface WeatherContextData {
         temp: string
         city_name: string
         date: string
+        description: string
         condition_slug: string
         currently: string
         forecast: [

@@ -43,6 +43,7 @@
 		B8827B6EDA334E75A3EF19CA /* icn-rain.svg in Resources */ = {isa = PBXBuildFile; fileRef = E98C3DC3B7174A9597811036 /* icn-rain.svg */; };
 		4ADBEE9824014FF2B861EB12 /* icn-snow.svg in Resources */ = {isa = PBXBuildFile; fileRef = DABB3254207040B5AA87A1AE /* icn-snow.svg */; };
 		79DB0819BEF44E35A38A6807 /* icn-tstorms.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0291E9341D884B2FBD2CFC71 /* icn-tstorms.svg */; };
+		9810A06F3C4B4AE5851BC804 /* icn-cloudy.svg in Resources */ = {isa = PBXBuildFile; fileRef = A1FC1A90D30243B78DB4A1CA /* icn-cloudy.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		E98C3DC3B7174A9597811036 /* icn-rain.svg */ = {isa = PBXFileReference; name = "icn-rain.svg"; path = "../src/assets/images/icn-rain.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		DABB3254207040B5AA87A1AE /* icn-snow.svg */ = {isa = PBXFileReference; name = "icn-snow.svg"; path = "../src/assets/images/icn-snow.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		0291E9341D884B2FBD2CFC71 /* icn-tstorms.svg */ = {isa = PBXFileReference; name = "icn-tstorms.svg"; path = "../src/assets/images/icn-tstorms.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A1FC1A90D30243B78DB4A1CA /* icn-cloudy.svg */ = {isa = PBXFileReference; name = "icn-cloudy.svg"; path = "../src/assets/images/icn-cloudy.svg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 				E98C3DC3B7174A9597811036 /* icn-rain.svg */,
 				DABB3254207040B5AA87A1AE /* icn-snow.svg */,
 				0291E9341D884B2FBD2CFC71 /* icn-tstorms.svg */,
+				A1FC1A90D30243B78DB4A1CA /* icn-cloudy.svg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				B8827B6EDA334E75A3EF19CA /* icn-rain.svg in Resources */,
 				4ADBEE9824014FF2B861EB12 /* icn-snow.svg in Resources */,
 				79DB0819BEF44E35A38A6807 /* icn-tstorms.svg in Resources */,
+				9810A06F3C4B4AE5851BC804 /* icn-cloudy.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
